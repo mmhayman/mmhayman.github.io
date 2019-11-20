@@ -18,6 +18,11 @@ body {
   a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: inherit;
   }
 
   /* Section */
@@ -81,57 +86,55 @@ body {
   }
 
   /* Navigation */
-  a#logo {
-    text-decoration: none;
-  }
-  
-  #logo { 
+  #logo {
     float: left;
     display: inline-block;
     padding: 10px 9px 10px 9px;
     font-size: 1.5rem;
     padding: 18px 2%;
-    font-weight:bold;
-  }
-  
+    font-weight: bold;
+}
+
   .firstName {
     color: #FECCC6;
 }
 .lastName {
-    color: #9A7D0A;
+  color: #9A7D0A;
 }
-  .clear {
-    clear: both;
-  }
-  
-  #nav {
-      width: 100%;
-      position: fixed;
-  }
-  .nav {
-    float: right;
-    list-style: none;     
-    text-align: left;
-    margin: 0;
-    padding: 18px 2%;
-  }
 
-  .nav > li {                                                         
-      display:Inline-block;
-      padding: 0px 20px;                            
-  }
-  
-   .nav > li a {                                               
-       text-decoration: none;
-       font-size: 1.2rem;
-       padding: 5px 0px 5px 0px;
-       color:  #9A7D0A;
-   }
-  
-   .nav > li > a:hover {
-       color: #000;
-   }
-  
+#nav {
+  width: 100%;
+  position: fixed;
+}
+.nav {
+float: right;
+list-style: none;     
+text-align: left;
+margin: 0;
+padding: 18px 2%;
+}
+
+.nav > li {                                                         
+  display:Inline-block;
+  padding: 0px 20px;                            
+}
+
+.nav > li a {                                               
+   text-decoration: none;
+   font-size: 1.2rem;
+   padding: 5px 0px 5px 0px;
+   color:  #9A7D0A;
+}
+
+.nav > li > a:hover {
+   color: #000;
+}
+
+nav a#logo {
+display: none;
+}
+
+
  #connect {
       background:url(../image-connect.jpg) no-repeat bottom/cover;
   }
@@ -168,4 +171,19 @@ body {
 
   i {
       padding: .8%;
+  }
+
+  @media screen and (max-width: 580px) {
+    #intro{
+      height: 50vh;
+    }
+    #intro .container {
+      margin-top: 15vh;
+    }
+    #intro h1 {
+      font-size: 3rem;
+    }
+    #intro h2 {
+      font-size: 1.5rem;
+    }
   }
