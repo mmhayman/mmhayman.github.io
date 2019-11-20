@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #FECCC6;
+  --primary-color-hover: #fec7c6;
 }
 
 body {
@@ -45,10 +46,11 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     overflow-y: hidden;
     color:#000;
+    background-image: linear-gradient(#fff, #f7E7CE);
   }
 
   #intro .container {
@@ -67,10 +69,18 @@ body {
 
   /* Footer */
   footer .footer-bottom {
-    background: #333;
-    padding: 1rem;
-    color:#FECCC6;
+    background: #fff;
+    padding: 3rem;
+    color:#000;
     text-align:center;
+  }
+
+  footer a {
+    color: #FECCC6;
+  }
+
+  footer a:hover {
+    color: #FECCC6;
   }
 
   /* Utility Classes */
@@ -141,6 +151,7 @@ display: none;
 
  #connect {
       background:url(../image-connect.jpg) no-repeat bottom/cover;
+      padding:8rem;
   }
   .connect ul {
     list-style: none;
@@ -153,28 +164,27 @@ display: none;
     color:#9A7D0A;
   }
 
-  #intro {
-    position: relative;
-    height:75vh;
-    background-image: linear-gradient(#fff, #f7E7CE);
-  }
-
-  .slant {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100px;
-    /* drop the height to have a constant angle for all screen widths */
-  }
-
   #about {
-      padding:6rem;
+      padding:8rem;
   }
 
   i {
       padding: .8%;
+  }
+
+  #contact {
+    background-color: #fff;
+    padding:6rem;
+    border-bottom: 1px solid #f0eeee;
+    border-top: 1px solid #f0eeee;
+    
+  }
+
+  #contact p {
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+    color:#000;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 580px) {
@@ -195,11 +205,12 @@ display: none;
   /* Buttons */
 
 .btn {
-  padding: .6rem;
+  padding: 10px 30px;
   color: #000;
   display: inline-block;
-  border: 2px double #9A7D0A;
   font-size: 1.4rem;
+  border-radius: 3px;
+  border-color:#FECCC6;
 }
 
 .btn-primary {
@@ -208,5 +219,11 @@ display: none;
 }
 
 .btn-primary:hover {
-  color:#000;
+  color:#9A7D0A;
+  background-color: var(--primary-color-hover);
+}
+.all {
+  text-decoration-line: underline;
+  text-decoration-color: #9A7D0A;
+  text-decoration-style: wavy;
 }
