@@ -2,6 +2,10 @@
 
 /* CSS Variables */
 
+:root {
+  --primary-color: #FECCC6;
+}
+
 body {
     font-family: 'Kulim Park', sans-serif;
     background-color: #fff;
@@ -187,3 +191,22 @@ display: none;
       font-size: 1.5rem;
     }
   }
+
+  /* Buttons */
+
+.btn {
+  padding: .6rem;
+  color: #000;
+  display: inline-block;
+  border: 2px double #9A7D0A;
+  font-size: 1.4rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color:#9A7D0A;
+}
+
+.btn-primary:hover {
+  color:#000;
+}
