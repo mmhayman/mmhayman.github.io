@@ -1,279 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Kulim+Park&display=swap");
 
 /* CSS Variables */
 
 :root {
-  --primary-color: #FECCC6;
+  --primary-color: #feccc6;
   --primary-color-hover: #fec7c6;
 }
 
 body {
-    font-family: 'Kulim Park', sans-serif;
-    background-color: #fff;
-    margin: 0;
-    color: #9A7D0A;
-    line-height: 1.6;
-  }
-
-  .circular--square {
-    border-radius: 50%;
-    padding:20px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-  }
-
-  a:hover {
-    color: inherit;
-  }
-
-  /* Section */
-.section {
-    padding: 2rem 0;
-  }
-  .section-head {
-    font-size: 2.5rem;
-    color:#000;
-  }
-
-  #intro {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 70vh;
-    position: relative;
-    overflow-y: hidden;
-    color:#000;
-    background-image: linear-gradient(#fff, #f7E7CE);
-  }
-
-  #intro .container {
-    margin-top: 25vh;
-  }
-
-  #intro h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-  }
-
-  #intro h2 {
-    font-size: 2rem;
-    margin-block-start: 0px;
-  }
-
-  /* Footer */
-  footer .footer-bottom {
-    background: #fff;
-    padding: 2rem;
-    color:#000;
-    text-align:center;
-    font-size:1.2rem;
-    }
-
-  footer a {
-    color: #FECCC6;
-    font-weight:bold;
-  }
-
-  footer a:hover {
-    color: #FECCC6;
-  }
-
-  /* Utility Classes */
-.container {
-    max-width: 1180px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 3rem;
-  }
-  
-  .lead {
-    font-size: 1.3rem;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-
-  /* Navigation */
-  #logo {
-    float: left;
-    display: inline-block;
-    padding: 10px 9px 10px 9px;
-    font-size: 1.5rem;
-    padding: 18px 2%;
-    font-weight: bold;
-}
-
-  .firstName {
-    color: #FECCC6;
-}
-.lastName {
-  color: #9A7D0A;
-}
-
-#nav {
-  width: 100%;
-  position: fixed;
-}
-.nav {
-float: right;
-list-style: none;     
-text-align: left;
-margin: 0;
-padding: 18px 2%;
-}
-
-.nav > li {                                                         
-  display:Inline-block;
-  padding: 0px 20px;                            
-}
-
-.nav > li a {                                               
-   text-decoration: none;
-   font-size: 1.2rem;
-   padding: 5px 0px 5px 0px;
-   color:  #9A7D0A;
-}
-
-.nav > li > a:hover {
-   color: #FECCC6;
-}
-
-nav a#logo {
-display: none;
-}
-
-
- #connect {
-  border-bottom: 1px solid #f0eeee;
-  border-top: 1px solid #f0eeee;
-      padding:2rem;
-  }
-  .connect ul {
-    list-style: none;
-    font-size: 2rem;
-    text-align: center;
-    padding-inline-start:0px;
-  }
-
-  .connect a {
-    color:#9A7D0A;
-  }
-
-  #about {
-    padding:6rem;
-  }
-
-  i {
-      padding: .8%;
-  }
-
-  #contact {
-    background-color: #fff;
-    padding:6rem;
-    background:url(../image-connect.jpg) no-repeat center/cover;
-  }
-
-  #contact p {
-    margin-block-start: 3em;
-    margin-block-end: 3em;
-    color:#000;
-    font-size: 1.8rem;
-  }
-
-  @media screen and (max-width: 580px) {
-    #intro{
-      height: 50vh;
-    }
-    #intro .container {
-      margin-top: 15vh;
-    }
-    #intro h1 {
-      font-size: 3rem;
-    }
-    #intro h2 {
-      font-size: 1.5rem;
-    }
-  }
-
-  /* Buttons */
-
-.btn {
-  padding: 10px 30px;
-  color: #000;
-  display: inline-block;
-  font-size: 1.4rem;
-  border-radius: 3px;
-  border-color:#FECCC6;
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color:#9A7D0A;
-}
-
-.btn-primary:hover {
-  color:#9A7D0A;
-  background-color: var(--primary-color-hover);
-}
-.all {
-  text-decoration-line: underline;
-  text-decoration-color: #9A7D0A;
-  text-decoration-style: wavy;
-}
-
-#connect h4 {
-  color:#000;
-}
-
-/* Return to Top */
-
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background:#FECCC6;
-  background: #FECCC6;
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top i {
-  color: #9A7D0A;
+  font-family: "Kulim Park", sans-serif;
+  background-color: #fff;
   margin: 0;
+  color: #9a7d0a;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+a:hover {
+  color: inherit;
+}
+
+/* Section */
+
+.section {
+  padding: 2rem 0;
+}
+.section-head {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+/* Intro */
+
+#intro {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70vh;
   position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  overflow-y: hidden;
+  color: #000;
+  background-image: linear-gradient(#fff, #f7e7ce);
 }
-#return-to-top:hover {
-  background: #FECCC6;
+#intro .container {
+  margin-top: 25vh;
 }
-#return-to-top:hover i {
-  color: #9A7D0A;
-  top: 5px;
+#intro h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
 }
-
-
+#intro h2 {
+  font-size: 2rem;
+  margin-block-start: 0px;
+  color: #feccc6;
+}
+/*bouceIn - Intro */
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
@@ -289,22 +73,250 @@ display: none;
 }
 
 @-webkit-keyframes bounceIn {
-0% {
-  transform: scale(0.1);
-  opacity: 0;
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-60% {
-  transform: scale(1.2);
-  opacity: 1;
-}
-100% {
-  transform: scale(1);
-}
-}
-
 h1 {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+.lead {
+  font-size: 1.3rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Navigation */
+#logo {
+  float: left;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 18px 2%;
+  font-weight: bold;
+}
+.firstName {
+  color: #feccc6;
+}
+.lastName {
+  color: #9a7d0a;
+}
+
+#nav {
+  width: 100%;
+  position: fixed;
+}
+.nav {
+  float: right;
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 18px 2%;
+}
+.nav > li {
+  display: Inline-block;
+  padding: 0px 20px;
+}
+.nav > li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 0px 5px 0px;
+  color: #9a7d0a;
+}
+.nav > li > a:hover {
+  color: #feccc6;
+}
+nav a#logo {
+  display: none;
+}
+
+/* Connect */
+#connect {
+  border-bottom: 1px solid #f0eeee;
+  border-top: 1px solid #f0eeee;
+  padding: 2rem;
+}
+.connect ul {
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+  padding-inline-start: 0px;
+}
+.connect a {
+  color: #9a7d0a;
+}
+.connect a:hover {
+  color: #feccc6;
+}
+.circular--square {
+  border-radius: 50%;
+  padding: 20px;
+}
+i {
+  padding: 0.8%;
+}
+
+/* Contact  */
+
+#contact {
+  background-color: #fff;
+  padding: 4rem;
+  background: url(../image-connect.jpg) no-repeat center/cover;
+}
+#contact p {
+  margin-block-start: 3em;
+  margin-block-end: 3em;
+  color: #000;
+  font-size: 1.8rem;
+}
+
+/* Form- Contact Section*/
+
+form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+input {
+  width: 400px;
+  height: 25px;
+  background-color: transparent;
+  outline: none;
+  color: #000;
+  font-family: "Kulim Park", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9a7d0a;
+}
+textarea {
+  border-radius: 3px;
+  background-color: transparent;
+  outline: none;
+  color: #000;
+  font-family: "Kulim Park", sans-serif;
+  font-size: 1.2em;
+  width: 404px;
+  height: 181px;
+  padding: 8px;
+  margin: 0px 0px 30px;
+  border-style: solid;
+  border-color: #9a7d0a;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  border-color: #feccc6;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Kulim Park", sans-serif;
+  line-height: 1.6;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #9a7d0a;
+}
+.btn-primary:hover {
+  color: #9a7d0a;
+  background-color: var(--primary-color-hover);
+}
+
+/* Return to Top */
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #feccc6;
+  background: #feccc6;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #9a7d0a;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: #feccc6;
+}
+#return-to-top:hover i {
+  color: #9a7d0a;
+  top: 5px;
+}
+
+/* Footer */
+footer .footer-bottom {
+  background: #fff;
+  padding: 2rem;
+  color: #000;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer a {
+  color: #feccc6;
+  font-weight: bold;
+}
+footer a:hover {
+  color: #feccc6;
+}
+
+@media screen and (max-width: 580px) {
+  #intro {
+    height: 50vh;
+  }
+  #intro .container {
+    margin-top: 15vh;
+  }
+  #intro h1 {
+    font-size: 3rem;
+  }
+  #intro h2 {
+    font-size: 1.5rem;
+  }
 }

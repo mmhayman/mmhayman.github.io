@@ -1,117 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/02a1cf0af0.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Michel Hayman</title>
-  </head>
-  <body>
-    <!-- Intro & Nav -->
-    <div id="intro">
-        <header>
-            <div id="nav" class="mh">
-              <a href="#" id="logo">
-                <span class="firstName">M</span
-                ><span class="lastName">H</span></a
-              >
-              <nav>
-                <ul class="nav">
-                  <li>
-                    <a href="#about">about</a>
-                  </li>
-                  <li>
-                    <a href="#connect">connect</a>
-                  </li>
-                  <li>
-                    <a href="#contact">contact</a>
-                  </li>
-                </ul>
-              </nav>
-          </header>
 
-      <div class="section-main container">
-        <h1>MICHEL HAYMAN</h1>
-        <h2>designer + developer.</h2>
-        <a href="https://docs.google.com/document/d/1SJzB3brSmLtdDXFPur5NXYxISeoIQBdNRO_d9E4tM_A/edit" target="_blank" class="btn btn-primary mb">resume</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/02a1cf0af0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Michel Hayman</title>
+</head>
+
+<body>
+  <!-- Intro & Nav -->
+  <div id="intro">
+    <header>
+      <div id="nav" class="mh">
+        <a href="#" id="logo">
+          <span class="firstName">M</span><span class="lastName">H</span></a>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="#connect">connect</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+            <li><a href="https://docs.google.com/document/d/1SJzB3brSmLtdDXFPur5NXYxISeoIQBdNRO_d9E4tM_A/edit" target="_blank"
+              >resume</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="section-main container">
+      <h1>MICHEL HAYMAN</h1>
+      <h2>designer + developer</h2>
+    </div>
+  </div>
+
+  <!-- Connect Section -->
+  <section id="connect" class="section">
+    <div class="container">
+      <h3 class="section-head">connect</h3>
+      <img class="circular--square" src="michel.jpg" />
+      <div class="connect">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/michel.marie.31" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/mic_hayy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/michelhayman/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/mmhayman" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h3 class="section-head">about.</h3>
-        <p>
-         Yes, pronounced like ‘Michelle’ but spelt with no ‘l’ and ‘e’. <br>
-          Moved to Portland, OR last November from a small town in Michigan.<br>
-          Coffee and sparkling water addict.<br>
-        </p>
-      </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h3 class="section-head">contact</h3>
+      <form action="https://formspree.io/xoqvagpd" method="POST">
+        <label>
+          <input type="text" placeholder="name">
+        </label>
+        <br>
+        <label>
+          <input type="text" name="_replyto" placeholder="email">
+        </label>
+        <br>
+        <label>
+          <textarea name="message" placeholder="message"></textarea>
+        </label>
+        <br>
+        <button type="submit" class="btn btn-primary mb">send message</button>
 
-    <!-- Connect Section -->
-    <section id="connect" class="section">
-        <div class="container">
-            <h3 class="section-head">connect.</h3>
-    <img class="circular--square" src="michel.jpg" />
-    <div class="connect">
-    <ul>
-        <li>
-          <a href="https://www.facebook.com/michel.marie.31" target="_blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+      </form>
+  </section>
 
-          <a href="https://www.instagram.com/mic_hayy/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/michelhayman/"
-            target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/mmhayman" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-bottom text-center">
+      &copy; 2019 <a href="mailto:hayman.michel@gmail.com">M<span class="lastName">H</span></a>
+
     </div>
-    </div>
-    </section>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-          <h3 class="section-head">contact.</h3>
-            <p>I am interested in <span class="all"> all </span> opportunities.</p>
-            <a href="mailto:hayman.michel@gmail.com" class="btn btn-primary mb">email me</a>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <div class="footer-bottom text-center">
-       &copy; 2019 <a href = "mailto:hayman.michel@gmail.com">M<span class="lastName">H</span></a>
-
-      </div>
-    </footer>
-
-    <!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+  <!-- Return to Top -->
+  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 
-<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
