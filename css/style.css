@@ -108,6 +108,7 @@ h1 {
 
 /* Navigation */
 #logo {
+  float:left;
   display: inline-block;
   font-size: 1.5rem;
   padding: 18px 2%;
