@@ -1,321 +1,208 @@
-@import url("https://fonts.googleapis.com/css?family=Kulim+Park&display=swap");
 
-/* CSS Variables */
-
-:root {
-  --primary-color: #feccc6;
-  --primary-color-hover: #fec7c6;
-}
 
 body {
-  font-family: "Kulim Park", sans-serif;
-  background-color: #fff;
-  margin: 0;
-  color: #9a7d0a;
-  line-height: 1.6;
-}
-a {
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
-}
-a:hover {
-  color: inherit;
-}
-
-/* Section */
-
-.section {
-  padding: 2rem 0;
-}
-.section-head {
-  font-size: 2.5rem;
-  color: #000;
-}
-
-/* Intro */
-
-#intro {
-  margin: 0;
   padding: 0;
-  width: 100%;
-  height: 70vh;
-  position: relative;
-  overflow-y: hidden;
-  color: #000;
-  background-image: linear-gradient(#fff, #f7e7ce);
+  margin: 0;
+  background: #fff;
 }
-#intro .container {
-  margin-top: 25vh;
-}
-#intro h1 {
-  font-size: 4rem;
-  margin-bottom: 0;
-}
-#intro h2 {
-  font-size: 2rem;
-  margin-block-start: 0px;
-  color: #feccc6;
-}
-/*bouceIn - Intro */
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-h1 {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
-}
-
-/* Utility Classes */
-.container {
-  max-width: 1180px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
-.lead {
-  font-size: 1.3rem;
-}
-.text-center {
-  text-align: center;
-}
-
-/* Navigation */
-#logo {
-  float:left;
-  font-size: 1.5rem;
-  padding: 18px 2%;
-  font-weight: bold;
-}
+/*--- navigation bar ---*/
 .firstName {
   color: #feccc6;
 }
 .lastName {
   color: #9a7d0a;
 }
-
-#nav {
-  width: 100%;
-  position: fixed;
+.navbar-brand {
+font-size:1.6rem!important;
+font-weight:bold;
 }
-.nav {
-  float: right;
-  list-style: none;
-  text-align: left;
-  margin: 0;
-  padding: 18px 2%;
-}
-.nav > li {
-  display: Inline-block;
-  padding: 0px 20px;
-}
-.nav > li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 5px 0px 5px 0px;
+.nav-link,
+.navbar-brand {
   color: #9a7d0a;
+  cursor: pointer;
+  font-size:1.2rem;
 }
-.nav > li > a:hover {
+.navbar-brand {
+  padding:0px 0px 5px 0px!important;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
   color: #feccc6;
 }
-nav a#logo {
-  display: none;
+.navbar-collapse {
+  justify-content: flex-end;
 }
-
-/* Connect */
-#connect {
-  border-bottom: 1px solid #f0eeee;
-  border-top: 1px solid #f0eeee;
-  padding: 2rem;
+.navbar-toggler {
+  padding:5px 0px 0px 0px!important;
+}
+.header {
+  background-image: linear-gradient(#fff, #f7e7ce);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.description {
+  left: 50%;
+  position: relative;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 {
+  color: #000000;
+  font-size: 4rem;
+}
+.description h2 {
+  font-size: 2rem;
+  margin-block-start: 0px;
+  color: #feccc6;
+  padding-bottom:20px;
+}
+/*bouceIn - Intro */
+@keyframes bounceIn {
+0% {
+  transform: scale(0.1);
+  opacity: 0;
+}
+60% {
+  transform: scale(1.2);
+  opacity: 1;
+}
+100% {
+  transform: scale(1);
+}
+}
+@-webkit-keyframes bounceIn {
+0% {
+  transform: scale(0.1);
+  opacity: 0;
+}
+60% {
+  transform: scale(1.2);
+  opacity: 1;
+}
+100% {
+  transform: scale(1);
+}
+}
+h1 {
+-webkit-animation-duration: 2s;
+animation-duration: 2s;
+-webkit-animation-name: bounceIn;
+animation-name: bounceIn;
+}
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.description button {
+  border:1px solid #6ab446;
+  background:#6ab446;
+  border-radius: 0;
+  color:#fff;
+}
+.description button:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+#connect h3 {
+  font-size:2.5rem;
+  text-align:center;
+}
+.container.connect {
+padding:3rem;
+text-align:center;
 }
 .connect ul {
-  list-style: none;
-  font-size: 2rem;
-  text-align: center;
-  padding-inline-start: 0px;
+list-style: none;
+font-size: 2rem;
+text-align: center;
+padding-inline-start: 0px;
 }
 .connect a {
-  color: #9a7d0a;
+color: #9a7d0a;
 }
 .connect a:hover {
-  color: #feccc6;
+color: #feccc6;
 }
-.circular--square {
-  border-radius: 50%;
-  padding: 20px;
+.connect-title {
+padding:20px;
 }
 i {
-  padding: 0.8%;
+padding: 0.8%;
+}
+.img-circle {
+border-radius: 50%;
+padding:20px;
 }
 
-/* Contact  */
-
-#contact {
-  background-color: #fff;
-  padding: 4rem;
-  background: url(../image-connect.jpg) no-repeat center/cover;
+#contact h3 {
+  font-size:2.5rem;
+  padding-bottom:20px;
+  text-align:center;
 }
-#contact p {
-  margin-block-start: 3em;
-  margin-block-end: 3em;
-  color: #000;
-  font-size: 1.8rem;
-}
-
-/* Form- Contact Section*/
-
-form {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-input {
-  width: 400px;
-  height: 25px;
-  background-color: transparent;
-  outline: none;
-  color: #000;
-  font-family: "Kulim Park", sans-serif;
-  font-size: 1.2em;
-  margin-bottom: 16px;
-  border-radius: 3px;
-  padding: 8px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #9a7d0a;
-}
-textarea {
-  border-radius: 3px;
-  background-color: transparent;
-  outline: none;
-  color: #000;
-  font-family: "Kulim Park", sans-serif;
-  font-size: 1.2em;
-  width: 404px;
-  height: 181px;
-  padding: 8px;
-  margin: 0px 0px 30px;
-  border-style: solid;
-  border-color: #9a7d0a;
-}
-
-/* Buttons */
-
-.btn {
-  padding: 10px 30px;
-  display: inline-block;
-  font-size: 1.4rem;
-  border-radius: 3px;
-  border-color: #feccc6;
-  border-style: none;
-  cursor: pointer;
-  font-family: "Kulim Park", sans-serif;
-  line-height: 1.6;
-}
-.btn-primary {
-  background-color: var(--primary-color);
-  color: #9a7d0a;
-}
-.btn-primary:hover {
-  color: #9a7d0a;
-  background-color: var(--primary-color-hover);
-}
-
-/* Return to Top */
-
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #feccc6;
-  background: #feccc6;
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top i {
-  color: #9a7d0a;
-  margin: 0;
-  position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top:hover {
-  background: #feccc6;
-}
-#return-to-top:hover i {
-  color: #9a7d0a;
-  top: 5px;
+.container-fluid.contact {
+  text-align:center;
+  background:url(/images/image-connect.jpg) no-repeat center/cover;
+  padding:7rem;
 }
 
 /* Footer */
-footer .footer-bottom {
+.footer-copyright {
   background: #fff;
   padding: 2rem;
   color: #000;
   text-align: center;
   font-size: 1.2rem;
 }
-footer a {
+.footer-copyright a {
   color: #feccc6;
   font-weight: bold;
 }
-footer a:hover {
+.footer-copyright a:hover {
   color: #feccc6;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 580px) {
-  #intro {
-    height: 50vh;
+/* Buttons */
+
+.btn {
+padding: 5px 20px!important;
+display: inline-block!important;
+font-size: 1.4rem!important;
+border-radius: 3px!important;
+border-color: #feccc6!important;
+border-style: none!important;
+cursor: pointer!important;
+line-height: 1.6!important;
+}
+.btn-primary {
+background-color: #feccc6!important;
+color: #9a7d0a!important;
+}
+.btn-primary:hover {
+color: #9a7d0a!important;
+background-color: #feccc6!important;
+}
+
+
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: relative;
+    top: 30%;
+    transform: none;
+    text-align: center;
   }
-  #intro .container {
-    margin-top: 15vh;
+  
+  .description h1 {
+    font-size: 2em;
   }
-  #intro h1 {
-    font-size: 3rem;
-  }
-  #intro h2 {
-    font-size: 1.5rem;
-  }
+
 }
