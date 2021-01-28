@@ -104,14 +104,17 @@ h1 {
   background: #fff;
   color: #000;
 }
+
+/*Connect */
 #connect h3 {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 2rem;
   padding-top: 4rem;
 }
-.container.connect {
+.container-fluid.connect {
   text-align: center;
+  background-color:#feccc6;
 }
 .connect ul {
   list-style: none;
@@ -137,6 +140,48 @@ i {
   border-radius: 50%;
   padding: 1rem;
 }
+/*Projects */
+#projects h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  padding:0 6rem;
+}
+.img-projects {
+ max-width: 100%;
+  height: auto;
+}
+.container-fluid.projects {
+  color:#000;
+}
+#projects h5 {
+  text-align:center;
+  text-transform: uppercase;
+  padding:3rem;
+}
+#projects p {
+  text-align:center;
+  padding:1rem;
+  font-style: italic;
+}
+#projects h4 {
+  text-align:center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#projects a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*Contact */
 #contact {
   padding-bottom: 4rem;
 }
@@ -220,4 +265,9 @@ i {
   .description h1 {
     font-size: 2em;
   }
+  .grid-container {
+    grid-template-columns:auto;
+  }
 }
+
+
