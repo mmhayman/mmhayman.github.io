@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background-color:#002929!important;
+  text-align: center!important;
 }
 /*--- navigation bar ---*/
 .navbar {
@@ -31,7 +32,7 @@ body {
   margin-right: 1em !important;
 }
 .nav-link:hover {
-  color: #feccc6;
+  color: rosybrown;
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -60,7 +61,7 @@ body {
 .description h2 {
   font-size: 2rem;
   margin-block-start: 0px;
-  color: #feccc6;
+  color: rosybrown;
   padding-bottom: 20px;
 }
 /*bouceIn - Intro */
@@ -101,40 +102,44 @@ h1 {
 #projects h3 {
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   padding-top: 5rem;
-  color: #000;
+  color: #fff;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  text-align: center;
-  padding:0 6rem;
-}
+
 .img-projects {
  max-width: 100%;
   height: auto;
 }
-.container-fluid.projects {
-  color:#000;
-background-color:#fff;
+#projects {
+  color:#fff;
+  background-color:rosybrown;
 
 }
 #projects h5 {
   text-align:center;
   text-transform: uppercase;
-  padding:3rem;
+  padding:1rem;
 }
 #projects p {
   text-align:center;
-  padding:1rem;
+  padding:.5rem;
   font-style: italic;
+  color: #000;
+  background-color:#F0F0F0;
 }
 #projects h4 {
-  padding:1rem;
+  padding-top:4rem;
   text-align:center;
   text-transform: uppercase;
   font-weight: 500;
+  font-size:1.3rem;
+  padding-bottom:5rem;
+}
+#projects h5 {
+  font-size:.9rem;
+  padding:.5rem;
+  font-weight:500;
 }
 
 #projects a {
@@ -142,6 +147,21 @@ background-color:#fff;
   text-decoration: none;
 }
 
+.card-body {
+  border-top:1px solid #ddd;
+  padding:0px!important;
+}
+.card-title {
+  margin-top:2rem!important;
+  margin-bottom:2rem!important;
+}
+.card {
+  display:inline-block!important;
+}
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
 
 /* Footer */
 .footer-copyright {
@@ -165,7 +185,7 @@ background-color:#fff;
   color: #fff;
 }
 .footer-copyright a:hover {
-  color: #feccc6;
+  color:rosybrown;
 }
 
 .fab, .far{
@@ -185,14 +205,11 @@ ul {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #feccc6;
-  color: #9a7d0a;
+  background-color: #fff;
+  color: rosybrown;
   cursor: pointer;
   padding: 8px 20px;
   border-radius: 25px;
-}
-#myBtn:hover {
-  background: #feccc6;
 }
 
 @media (max-width: 575.98px) {
