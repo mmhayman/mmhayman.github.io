@@ -24,3 +24,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+$(document).on('click',function(){
+  $('.collapse').collapse('hide');
+  })
