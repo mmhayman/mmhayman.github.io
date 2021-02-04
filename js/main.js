@@ -1,6 +1,4 @@
-$(document).ready(function() {
-  $(".header").height($(window).height());
-});
+
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
