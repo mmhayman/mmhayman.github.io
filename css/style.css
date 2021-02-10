@@ -245,4 +245,7 @@ ul {
   padding:1rem!important;
 
 }
+.fixed-top {
+  height:0px;
+}
 }
