@@ -16,6 +16,7 @@ body {
 }
 .navbar-nav{
   padding:1rem!important;
+  background-color: #002929;
 }
 .navbar-brand {
   font-size: 1.6rem !important;
