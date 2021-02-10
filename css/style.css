@@ -47,9 +47,6 @@ body {
 .navbar-brand img {
   width: 60px;
 }
-.fixed-top {
-  height:60px;
-}
 
 .description {
   left: 50%;
@@ -243,9 +240,5 @@ ul {
 @media (max-width: 767px) {
 .navbar-nav{
   padding:1rem!important;
-
-}
-.fixed-top {
-  height:0px;
 }
 }
